@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <section>
         <nav>
-            <img src="./assets/FES.svg" alt="">
+            <img src="./assets/FES.svg" class="logo" alt="">
             <ul>
                 <li><a href="#About">About</a></li>
                 <li><a href="#Discord">Discord</a></li>
@@ -16,43 +17,57 @@
             </ul>
         </nav>
         <header>
-            <div>
-                <h1>Best place to learn front-end development</h1>
-                <p>Go from being an absolute beginner to a pro with a simplified process.</p>
-                <button>Start now</button>
+            <div class="row">
+                <div>
+                    <h1>Best place to learn front-end development</h1>
+                    <p class="subheader">Go from being an absolute beginner to a pro with a simplified process.</p>
+                    <button>Start now</button>
+                </div>
+                <figure>
+                    <img src="./assets/laptop.png" alt="Home page image">
+                </figure>
             </div>
-            <figure>
-                <img src="./assets/laptop.png" alt="Home page image">
-            </figure>
         </header>
     </section>
     <main>
         <section id="About">
             <h2>About</h2>
-            <div>
-                <p>Welcome to our front-end development tutorial! We provide a comprehensive learning 
-                    experience for beginners and intermediate developers.</p>
-                <p>Our tutorial covers HTML, CSS, JavaScript, and popular frameworks like React and Vue.js. 
-                    We offer step-by-step guides, interactive exercises, and real-world projects to help you 
-                    build your skills and confidence.</p>
+            <div class="row">
+                <div class="section_description">
+                    <div class="section_description--wrapper">
+                        <p class="section_description--para">
+                            Welcome to our front-end development tutorial! We provide a comprehensive learning 
+                            experience for beginners and intermediate developers.</p>
+                        <p class="section_description--para">
+                            Our tutorial covers HTML, CSS, JavaScript, and popular frameworks like React and Vue.js. 
+                            We offer step-by-step guides, interactive exercises, and real-world projects to help you 
+                            build your skills and confidence.</p>
+                    </div>
+                    <figure class="about_image--wrapper">
+                        <img src="./assets/about.jpg" alt="">
+                    </figure>
+                </div>
             </div>
-            <figure>
-                <img src="./assets/about.jpg" alt="">
-            </figure>
         </section>
 
         <section id="Discord">
             <h2>Discord</h2>
-            <div>
-                <p>Join our Discord community to connect with other learners and get help from our 
-                    experienced mentors.</p>
-                <p>In our Discord server, you can ask questions, share your projects, and participate 
-                    in discussions about front-end development. We also host regular events and 
-                    workshops to help you stay motivated and engaged.</p>
+            <div class="row">
+                <div class="section_description">
+                    <figure class="about_image--wrapper">
+                        <img src="./assets/discord.png" alt="">
+                    </figure>
+                    <div class="section_description--wrapper">
+                        <p class="section_description--para">
+                            Join our Discord community to connect with other learners and get help from our 
+                            experienced mentors.</p>
+                        <p class="section_description--para">
+                            In our Discord server, you can ask questions, share your projects, and participate 
+                            in discussions about front-end development. We also host regular events and 
+                            workshops to help you stay motivated and engaged.</p>
+                    </div>
+                </div>
             </div>
-            <figure>
-                <img src="./assets/discord.png" alt="">
-            </figure>
         </section>
 
         <section id="Contact">
@@ -62,18 +77,18 @@
                 <input type="email" placeholder="jane@example.com">
                 <label>Message</label>
                 <textarea type="text" placeholder="Your message here..."></textarea>
-                <button type="submit">Send</button>
+                <button type="submit">Contact Us!</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <img src="./assets/FES.svg" alt="">
-        <div>
-            <a href="#About">About</a>
-            <a href="#Discord">Discord</a>
-            <a href="#Contact">Contact</a>
-            <a href="">Courses</a>
+        <img class="footer_logo" src="./assets/FES.svg" alt="">
+        <div class="footer_links">
+            <a class="footer_link" href="#About">About</a>
+            <a class="footer_link" href="#Discord">Discord</a>
+            <a class="footer_link" href="#Contact">Contact</a>
+            <a class="footer_link" href="">Courses</a>
         </div>
         <p>Copyright Frontend Simplified</p>
     </footer>
